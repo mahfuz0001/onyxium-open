@@ -1,0 +1,25 @@
+{
+  "name": "Onyxium AI",
+  "short_name": "Onyxium",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait",
+  "description": "Unlock the potential of artificial intelligence with our powerful tools and resources. Elevate your projects and workflows to the next level.",
+  "lang": "en",
+  "dir": "ltr"
+}

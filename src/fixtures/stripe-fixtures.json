@@ -1,0 +1,92 @@
+{
+  "_meta": {
+    "template_version": 0
+  },
+  "fixtures": [
+    {
+      "name": "prod_individual",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "Individual",
+        "description": "Individual product description",
+        "metadata": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "name": "price_individual_month",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_individual:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 1999,
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "price_individual_year",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_individual:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 19999,
+        "recurring": {
+          "interval": "year",
+          "interval_count": 1
+        }
+      }
+    },
+
+    {
+      "name": "prod_business",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "Business",
+        "description": "Business product description",
+        "metadata": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "name": "price_business_month",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_business:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 9999,
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "price_business_year",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_business:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 99999,
+        "recurring": {
+          "interval": "year",
+          "interval_count": 1
+        }
+      }
+    }
+  ]
+}

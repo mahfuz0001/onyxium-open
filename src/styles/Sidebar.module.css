@@ -1,0 +1,17 @@
+.scrollbar {
+  scrollbar-width: 3px;
+  scrollbar-color: rgb(236, 113, 210);
+  max-height: 100%;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(236, 113, 210);
+}
