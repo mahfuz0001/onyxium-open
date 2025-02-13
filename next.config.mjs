@@ -106,6 +106,11 @@ export default withSentryConfig(
           protocol: "https",
           hostname: "**.gstatic.com",
         },
+        {
+          protocol: "https",
+          hostname: "**.pravatar.cc"  
+        },
+        
       ],
     },
   }),

@@ -1,13 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import { Container } from "./container";
-import { Logo } from "./logo";
 import {
-  IconBrandGithub,
   IconBrandGithubFilled,
   IconBrandGoogleFilled,
 } from "@tabler/icons-react";
+import React, { useState } from "react";
 import { Button } from "./button";
+import { Container } from "./container";
+import { Logo } from "./logo";
 
 import { motion } from "framer-motion";
 
@@ -22,9 +21,7 @@ export const Register = () => {
   return (
     <Container className="h-screen max-w-lg mx-auto flex flex-col items-center justify-center">
       <Logo />
-      <h1 className="text-xl md:text-4xl font-bold my-4">
-        Welcome to Proactiv
-      </h1>
+      <h1 className="text-xl md:text-4xl font-bold my-4">Welcome to Alvo</h1>
 
       <div className="flex flex-col sm:flex-row gap-4 w-full">
         <button className="flex flex-1 justify-center space-x-2 items-center bg-white px-4 py-3 rounded-md text-black hover:bg-white/80 transition duration-200 shadow-[0px_1px_0px_0px_#00000040_inset]">

@@ -7,7 +7,7 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "framer-motion";
-import { Link } from "next-view-transitions";
+import { useRouter } from "next/navigation"; // Import useRouter for navigation
 import { useState } from "react";
 import { Button } from "../button";
 import { NavBarItem } from "./navbar-item";
@@ -22,7 +22,7 @@ type Props = {
 
 export const DesktopNavbar = ({ navItems }: Props) => {
   const { scrollY } = useScroll();
-
+  const router = useRouter(); // Initialize router
   const [showBackground, setShowBackground] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (value) => {
@@ -32,6 +32,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
       setShowBackground(false);
     }
   });
+
   return (
     <motion.div
       className={cn(
@@ -39,7 +40,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
       )}
       animate={{
         width: showBackground ? "80%" : "100%",
-        background: showBackground ? "var(--neutral-900)" : "transparent",
+        background: showBackground ? "#171717" : "transparent",
       }}
       transition={{
         duration: 0.4,
@@ -69,10 +70,14 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         </div>
       </div>
       <div className="flex space-x-2 items-center">
-        <Button variant="simple" as={Link} href="/register">
+        <Button
+          variant="simple"
+          onClick={() => router.push("/signin")} // Redirect to /signin
+        >
           Register
         </Button>
-        <Button>Book a demo</Button>
+        <Button onClick={() => router.push("/signin")}>Try Alvo</Button>{" "}
+        {/* Redirect to /signin */}
       </div>
     </motion.div>
   );

@@ -17,12 +17,6 @@ const questions = [
       "Alvo streamlines workflows by connecting various applications and automating complex processes, saving time and resources.",
   },
   {
-    id: 3,
-    title: "Who is Alvo for?",
-    description:
-      "Alvo is designed for businesses of all sizes, looking to enhance efficiency and optimize their operational workflows.",
-  },
-  {
     id: 4,
     title: "What features does Alvo offer?",
     description:
@@ -33,12 +27,6 @@ const questions = [
     title: "Does Alvo offer integrations?",
     description:
       "Yes, Alvo integrates with a wide range of tools and platforms such as CRMs, ERPs, and cloud storage services.",
-  },
-  {
-    id: 6,
-    title: "Is Alvo suitable for teams?",
-    description:
-      "Absolutely! Alvo provides collaboration tools, shared dashboards, and role-based access for effective team management.",
   },
   {
     id: 7,
@@ -57,12 +45,6 @@ const questions = [
     title: "How can I get started with Alvo?",
     description:
       "Simply sign up on the Alvo website, set up your integrations, and start optimizing your workflows today!",
-  },
-  {
-    id: 10,
-    title: "How secure is Alvo?",
-    description:
-      "Alvo employs enterprise-grade security measures, including data encryption and compliance with industry standards, to protect your information.",
   },
 ];
 

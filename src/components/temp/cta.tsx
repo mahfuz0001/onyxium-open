@@ -17,8 +17,8 @@ export const CTA = () => {
             Get started today with Alvo to kickstart your marketing efforts
           </motion.h2>
           <p className="max-w-md mt-8 text-center md:text-left text-sm md:text-base mx-auto md:mx-0 text-neutral-400">
-            Proactiv houses the best in class software tools to kickstart your
-            marketing journey. Join 127,000+ other users to get started.
+            Alvo integrates AI tools from different providers to help you
+            streamline your day to day tasks.
           </p>
           <FeaturedImages
             textClassName="lg:text-left text-center"

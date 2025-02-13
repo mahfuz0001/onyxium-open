@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
 import { IconCheck } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import Balancer from "react-wrap-balancer";
 import Beam from "./beam";
@@ -11,6 +12,8 @@ import { CustomLink } from "./custom-link";
 import { Switch } from "./switch";
 
 export const PricingGrid = () => {
+  const router = useRouter();
+
   const tiers = [
     {
       title: "Hobby",
@@ -29,7 +32,7 @@ export const PricingGrid = () => {
         </span>,
       ],
       onClick: () => {
-        console.log("clicked");
+        router.push("/signin");
       },
       ctaText: "Get Started",
     },
@@ -40,7 +43,7 @@ export const PricingGrid = () => {
       yearlyPrice: 100,
       features: [
         "Everything in Hobby +",
-        "Access to Proactiv AI",
+        "Access to Onyxium AI",
         "Priority tools access",
         <span key="access">
           Support for{" "}
@@ -57,7 +60,7 @@ export const PricingGrid = () => {
         </span>,
       ],
       onClick: () => {
-        console.log("clicked");
+        router.push("/signin");
       },
       ctaText: "Get Started",
     },
@@ -85,7 +88,7 @@ export const PricingGrid = () => {
       ],
       featured: true,
       onClick: () => {
-        console.log("clicked");
+        router.push("/signin");
       },
       ctaText: "Get Started",
     },
@@ -102,9 +105,9 @@ export const PricingGrid = () => {
         "24/7 customer support",
       ],
       onClick: () => {
-        console.log("clicked");
+        router.push("/signin");
       },
-      ctaText: "Book a demo",
+      ctaText: "Get Started",
     },
   ];
   const [checked, setChecked] = useState(false);

@@ -45,14 +45,14 @@ export const Footer = () => {
     },
   ];
   return (
-    <div className="relative">
+    <div className="relative bg-[#08090A]">
       <div className="border-t border-neutral-900 px-8 pt-20 pb-32 relative bg-primary">
         <div className="max-w-7xl mx-auto text-sm text-neutral-500 dark:text-neutral-400 flex sm:flex-row flex-col justify-between items-start ">
           <div>
             <div className="mr-4  md:flex mb-4">
               <Logo />
             </div>
-            <div>Copyright &copy; 2024 Proactiv INC</div>
+            <div>Copyright &copy; 2025 Alvo</div>
             <div className="mt-2">All rights reserved</div>
           </div>
           <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">

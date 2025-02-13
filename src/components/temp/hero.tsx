@@ -64,7 +64,7 @@ export const Hero = () => {
           as="h1"
           className="text-4xl md:text-4xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10  py-6"
         >
-          Master AI Tools with Onyxium
+          Master AI Tools with Alvo
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 text-base md:text-xl text-neutral-200 dark:text-neutral-200-dark max-w-3xl mx-auto relative z-10">
           Discover AI, Automate Tasks, and Save Time. Alvo is the ultimate tool
